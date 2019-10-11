@@ -1,0 +1,85 @@
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Mansalva', cursive; */
+
+body {
+  background-color: #fff;
+  font-family: 'Barlow Condensed'
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+h1 {
+  padding: 2%;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Mansalva', cursive;
+  background-color: #cacaca;
+}
+
+h2 {
+  font-size: 0;
+  position: absolute;
+  color: #fff;
+}
+
+.navbar button  {
+  margin: 1rem;
+  background-color: #cacaca;
+}
+.navbar button:hover  {
+  background-color: #9c9a9a;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+button {
+  margin: 0 1rem;
+  cursor: pointer;
+  border: 0.5rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.section-title {
+  margin: 1rem;
+}
+
+.section-title button {
+  background-color: green;
+  color: #fff;
+}
+
+article {
+  text-align: center;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  background-color: #cacaca;
+  border: #cacaca 0.5rem solid;
+  border-radius: 0.3rem;
+}
+
+h4 {
+  padding-bottom: 0.5rem;
+}
+
+article p{
+  padding-bottom: 1rem;
+}
+
+.article-modification {
+  background-color: #4682B4;
+  color: #fff;
+}
+
+.article-delete {
+  background-color: #cc0000;
+  color: #fff;
+}
