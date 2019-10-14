@@ -6,11 +6,7 @@ body {
   font-family: 'Barlow Condensed'
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-  margin: 1rem;
-}
+  /* HEADER */
 
 h1 {
   padding: 2%;
@@ -48,6 +44,14 @@ button {
   border-radius: 0.5rem;
 }
 
+  /* MAIN CONTENT */
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
 .section-title {
   margin: 1rem;
 }
@@ -55,6 +59,10 @@ button {
 .section-title button {
   background-color: green;
   color: #fff;
+}
+
+.section-title button:hover {
+  background-color: rgb(1, 90, 1);
 }
 
 article {
@@ -79,7 +87,15 @@ article p{
   color: #fff;
 }
 
+.article-modification:hover {
+  background-color: rgb(51, 100, 139);
+}
+
 .article-delete {
   background-color: #cc0000;
   color: #fff;
+}
+
+.article-delete:hover {
+  background-color: #960101;
 }
