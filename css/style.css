@@ -3,17 +3,27 @@ font-family: 'Mansalva', cursive; */
 
 body {
   background-color: #fff;
-  font-family: 'Barlow Condensed'
+  font-family: 'Barlow Condensed';
 }
 
-  /* HEADER */
+button {
+  margin: 0 1rem;
+  cursor: pointer;
+  border: 0.5rem solid transparent;
+  border-radius: 0.5rem;
+}
 
+  /* TITLES */
 h1 {
-  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 2% 0;
   font-size: 2rem;
-  text-align: center;
   font-family: 'Mansalva', cursive;
-  background-color: #cacaca;
+  background-color: #cec8c8;
+  width: 100%;
 }
 
 h2 {
@@ -22,9 +32,30 @@ h2 {
   color: #fff;
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+  /* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
 .navbar button  {
-  margin: 1rem;
-  background-color: #cacaca;
+  margin: 0.5rem 0.3rem;
+  background-color: #cec8c8;
 }
 .navbar button:hover  {
   background-color: #9c9a9a;
@@ -37,45 +68,40 @@ h2 {
   list-style: none;
 }
 
-button {
-  margin: 0 1rem;
-  cursor: pointer;
-  border: 0.5rem solid transparent;
-  border-radius: 0.5rem;
+  /* MAIN CONTENT */
+main {
+  margin-top: 1rem;
+  overflow: auto;
 }
 
-  /* MAIN CONTENT */
-
-main {
+section {
   display: flex;
-  justify-content: space-around;
-  margin: 1rem;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 300px;
 }
 
 .section-title {
-  margin: 1rem;
+  margin: 0.7rem;
 }
 
 .section-title button {
-  background-color: green;
+  background-color: rgb(9, 175, 9);
   color: #fff;
 }
 
 .section-title button:hover {
-  background-color: rgb(1, 90, 1);
+  background-color: rgb(14, 134, 14);
 }
 
 article {
   text-align: center;
   padding: 0.1rem;
   margin: 0.1rem;
-  background-color: #cacaca;
-  border: #cacaca 0.5rem solid;
+  background-color: #cec8c8;
+  border: #cec8c8 0.5rem solid;
   border-radius: 0.3rem;
-}
-
-h4 {
-  padding-bottom: 0.5rem;
 }
 
 article p{
@@ -83,7 +109,8 @@ article p{
 }
 
 .article-modification {
-  background-color: #4682B4;
+  background-color: rgb(58, 136, 199);
+  border-radius: 0.3rem;
   color: #fff;
 }
 
@@ -93,9 +120,15 @@ article p{
 
 .article-delete {
   background-color: #cc0000;
+  border-radius: 0.3rem;
   color: #fff;
 }
 
 .article-delete:hover {
   background-color: #960101;
+}
+
+    /* FLEX */
+.flex {
+  display: flex;
 }
